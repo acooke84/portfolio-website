@@ -21,7 +21,7 @@ export abstract class RenderLoop {
     this.graphics = graphics;
   }
 
-  private init(): void {}
+  protected init(): void {}
 
   tick(dt: number): void {
     this.renderObjects.forEach((obj: RenderObject, _: string) => {
